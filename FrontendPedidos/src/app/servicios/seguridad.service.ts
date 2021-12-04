@@ -8,12 +8,14 @@ import { ModeloIdentificar } from '../modelos/identificar.modelo';
 })
 export class SeguridadService {
 
+  url = 'http://localhost:3000';
+
   constructor(private http: HttpClient) {
 
    }
 
    Identificar(usuario: string, clave: string): Observable<ModeloIdentificar>{
-     return this.http.post<ModeloIdentificar>("localhost:3000/identificar-persona",{
+     return this.http.post<ModeloIdentificar>(`${this.url}/identificarPersona`,{
        usuario: usuario,
        clave: clave
      },{
