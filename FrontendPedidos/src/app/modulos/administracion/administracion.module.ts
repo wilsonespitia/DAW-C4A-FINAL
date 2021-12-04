@@ -14,7 +14,7 @@ import { BuscarProductoComponent } from './productos/buscar-producto/buscar-prod
 
 @NgModule({
   declarations: [
-    CrearPersonaComponent,
+    /* CrearPersonaComponent, */
     EditarPersonaComponent,
     EliminarPersonaComponent,
     BuscarPersonaComponent,

@@ -9,7 +9,7 @@ const routes: Routes = [
     component: InicioComponent
   },
   {
-    path:"/",
+    path:"",
     pathMatch: 'full',
     redirectTo: '/inicio'
   },
@@ -22,7 +22,7 @@ const routes: Routes = [
     loadChildren: () => import("./modulos/administracion/administracion.module").then(x => x.AdministracionModule)
   },
   {
-    path: 'seguridad',
+    path: 'pedidos',
     loadChildren: () => import("./modulos/pedidos/pedidos.module").then(x => x.PedidosModule)
   },
   {
