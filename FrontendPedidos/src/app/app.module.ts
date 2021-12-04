@@ -7,6 +7,7 @@ import { CrearPersonaComponent } from './modulos/administracion/personas/crear-p
 import { BarraNavegacionComponent } from './plantilla/barra-navegacion/barra-navegacion.component';
 import { PiePaginaComponent } from './plantilla/pie-pagina/pie-pagina.component';
 import { InicioComponent } from './plantilla/inicio/inicio.component';
+import { ErrorComponent } from './plantilla/error/error.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InicioComponent } from './plantilla/inicio/inicio.component';
     CrearPersonaComponent,
     BarraNavegacionComponent,
     PiePaginaComponent,
-    InicioComponent
+    InicioComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
