@@ -18,7 +18,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
-    "@types/crypto-js": "^4.0.2",
+    "crypto-js": "^4.1.1",
     "cryptojs": "^2.5.3",
     "materialize-css": "^1.0.0-rc.2",
     "rxjs": "~7.4.0",
@@ -29,6 +29,7 @@
     "@angular-devkit/build-angular": "~13.0.4",
     "@angular/cli": "~13.0.4",
     "@angular/compiler-cli": "~13.0.0",
+    "@types/crypto-js": "^4.0.2",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.10.0",
@@ -41,5 +42,5 @@
   },
   "browser": {
     "crypto": false
-}
+  }
 }
