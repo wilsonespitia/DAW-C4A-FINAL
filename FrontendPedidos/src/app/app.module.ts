@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CrearPersonaComponent } from './modulos/administracion/personas/crear-persona/crear-persona.component';
 import { BarraNavegacionComponent } from './plantilla/barra-navegacion/barra-navegacion.component';
 import { PiePaginaComponent } from './plantilla/pie-pagina/pie-pagina.component';
+import { InicioComponent } from './plantilla/inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CrearPersonaComponent,
     BarraNavegacionComponent,
-    PiePaginaComponent
+    PiePaginaComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
