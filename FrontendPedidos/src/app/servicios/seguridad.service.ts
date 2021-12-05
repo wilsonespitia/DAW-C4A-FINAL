@@ -23,6 +23,10 @@ export class SeguridadService {
 
        })
      })
+   }
 
+   AlmacenarSesion(datos: ModeloIdentificar){
+     let stringDatos = JSON.stringify(datos);
+     localStorage.setItem("datosSesion", stringDatos)
    }
 }
