@@ -18,7 +18,7 @@ export class IdentificacionComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
     private servicioSeguridad: SeguridadService,
-    private router: Router) { }
+    /* private router: Router */) { }
 
   ngOnInit(): void {
   }
@@ -29,7 +29,7 @@ export class IdentificacionComponent implements OnInit {
     let claveCifrada = CryptoJS.MD5(clave).toString();
     this.servicioSeguridad.Identificar(usuario, claveCifrada).subscribe((datos:any)=>{
       this.servicioSeguridad.AlmacenarSesion(datos);
-      this.router.navigate(["/inicio"]);
+      /* this.router.navigate(["/inicio"]); */
     }, (error: any)=>{
       //KO
       alert("Datos Invalidos")
